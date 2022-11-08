@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Card</title>
+    <style>
+        :root {
+        --main-primary-color: teal;
+        }
+        body {
+            /* background-image: url('https://images.pexels.com/photos/1624600/pexels-photo-1624600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+            /* background-image: url('https://images.pexels.com/photos/5186869/pexels-photo-5186869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+            /* background-image: url('https://images.pexels.com/photos/2873479/pexels-photo-2873479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+            background-image: url('https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card {
+            /* margin-right: 100px; */
+            width: 500px;
+            height: 350px;
+            /* background: teal; */
+            background: transparent;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            /* border: 20px dotted yellow */
+            border: 10px solid var(--main-primary-color);
+        }
+        .card img {
+            width: 100%;
+            opacity: 0.8;
+        }
+        .card p {
+            text-align: center;
+        }
+        .card .description {
+            text-align: center;
+            /* color: var(--main-primary-color); */
+            color: #333;
+            /* background-color: red; */
+        }
+        .card .description h1 {
+            font-family: monospace;
+            margin-bottom: 2px;
+        }
+        .card .description h2 {
+            margin-top: 0px;
+            margin-bottom: 2px;
+            font-family: cursive;
+        }
+        .card p:nth-child(2){
+            color: turquoise;
+        }
+        .profile-image {
+            width: 100px;
+            position: absolute;
+            top: 35%;
+            left: 5%;
+        }
+        .profile-image img {
+            width: 100%;
+            /* border: 4px  red; */
+            border-width: 4px;
+            /* border-color: yellow; */
+            border-color: var(--main-primary-color);
+            border-style: dashed;
+            /* border-style: dotted; */
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            opacity: 1;
+        }
+        .container{
+            margin-top: 5px;
+            padding-bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* padding-left: 50px;
+            padding-right: 50px; */
+        }
+        .container a {
+            margin: 0 10px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="200" alt="cat">
+            <div class="profile-image">
+                <img src="./img/workspace.jpeg" alt="profile-image">
+            </div>
+            <div class="description">
+                <h1>Juan Hernandez</h1>
+                <h2>Frontend Developer</h2>
+                <!-- <p></p> -->
+                <div class="container">
+                    <a href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" width="30" height="30" alt="linkedin">
+                    </a>
+                    <a href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" width="30" height="30" alt="github">
+                    </a>
+                    <a href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" width="30" height="30" alt="instagram">
+                    </a>
+
+                </div>
+            </div>
+            <!-- <p>cat: mimi</p>
+            <p>love</p> -->
+        </div>
+    </section>
+  
+</body>
+</html>
